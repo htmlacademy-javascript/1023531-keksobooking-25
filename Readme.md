@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг»
 
 * Студент: [Katerina Romanova](https://up.htmlacademy.ru/javascript/25/user/1023531).
-* Наставник: `Игорь Агапов`.
+* Наставник: [Игорь Агапов](https://htmlacademy.ru/profile/id1034633).
 
 ---
 
