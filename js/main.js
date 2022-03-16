@@ -14,3 +14,6 @@ function getRandomFloat(minValue, maxValue, numberAfterComa) {
   const rand = Math.random() * (maxValue - minValue) + minValue;
   return rand.toFixed(numberAfterComa);
 }
+
+getRandomFloat(1.2, 2.5, 3);
+getRandomNumber(1, 4);
