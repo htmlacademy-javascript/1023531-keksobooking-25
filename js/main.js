@@ -1,19 +1,4 @@
 
-function getRandomNumber(minValue, maxValue) {
-  if(minValue < 0 || maxValue < 0 || minValue >= maxValue){
-    return false;
-  }
-  const rand = minValue - 0.5 + Math.random() * (maxValue - minValue + 1);
-  return Math.round(rand);
-}
-
-function getRandomFloat(minValue, maxValue, numberAfterComa) {
-  if(minValue < 0 || maxValue < 0 || minValue >= maxValue){
-    return false;
-  }
-  const rand = Math.random() * (maxValue - minValue) + minValue;
-  return rand.toFixed(numberAfterComa);
-}
 
 const OFFER_COUNT = 10;
 
@@ -45,6 +30,23 @@ const PHOTOS = [
   'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/brandon-hoogenboom-SNxQGWxZQi0.jpg',
   'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg'
 ];
+
+
+function getRandomNumber(minValue, maxValue) {
+  if(minValue < 0 || maxValue < 0 || minValue >= maxValue){
+    return false;
+  }
+  const rand = minValue - 0.5 + Math.random() * (maxValue - minValue + 1);
+  return Math.round(rand);
+}
+
+function getRandomFloat(minValue, maxValue, numberAfterComa) {
+  if(minValue < 0 || maxValue < 0 || minValue >= maxValue){
+    return false;
+  }
+  const rand = Math.random() * (maxValue - minValue) + minValue;
+  return rand.toFixed(numberAfterComa);
+}
 
 const generateAvatarNumber = () => {
   const randomNumber = getRandomNumber(0,10);
@@ -85,6 +87,4 @@ const createOffer = () => ({
   }
 });
 
-
 const Offers = Array.from({length: OFFER_COUNT}, createOffer);
-console.log(Offers);
